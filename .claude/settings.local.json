@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(node:*)",
+      "Bash(source .venv/bin/activate)",
+      "Bash(pip install:*)",
+      "Bash(# Check if Python 3.11+ is available via brew or pyenv which python3.11 || which python3.12 || which python3.10 || brew list)",
+      "Bash(pip show:*)",
+      "Bash(lsof:*)"
+    ]
+  }
+}
