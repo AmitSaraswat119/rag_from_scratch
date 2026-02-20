@@ -10,10 +10,10 @@ python-dotenv==1.0.1
 pdfplumber==0.11.4
 
 # OpenAI (embeddings + generation)
-openai==1.55.3
+openai>=1.55.3
 
-# Zilliz / Milvus client
-pymilvus==2.4.9
+# Zilliz / Milvus client — 2.5.x dropped pkg_resources dependency
+pymilvus>=2.5.0
 # pymilvus depends on environs which requires marshmallow 3.x (not 4.x)
 marshmallow<4.0.0
 
@@ -22,3 +22,6 @@ sentence-transformers==3.3.1
 
 # Data validation (FastAPI uses this internally)
 pydantic>=2.10.1
+
+# Fix for Python 3.14 — pkg_resources moved to setuptools
+setuptools>=70.0.0
