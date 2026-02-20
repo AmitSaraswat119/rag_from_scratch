@@ -1,5 +1,5 @@
 # Web framework
-fastapi==0.115.5
+fastapi>=0.115.5
 uvicorn[standard]==0.32.1
 python-multipart==0.0.17
 
@@ -21,4 +21,4 @@ marshmallow<4.0.0
 sentence-transformers==3.3.1
 
 # Data validation (FastAPI uses this internally)
-pydantic==2.10.1
+pydantic>=2.10.1
